@@ -98,7 +98,11 @@
       linear-gradient(var(--grid-line) 1px, transparent 1px),
       linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
     background-size: 64px 64px;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
   }
+
 }
 
 @utility mono-label {
