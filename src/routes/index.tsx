@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { ThemeToggle } from "@/components/ThemeToggle";
+
 
 const TITLE = "Dhyanruddh Sujil — Java Full Stack Developer";
 const DESCRIPTION =
@@ -122,14 +124,18 @@ function Index() {
               </a>
             ))}
           </nav>
-          <a
-            href="mailto:dhyansujil53@gmail.com"
-            className="rounded-full border border-primary/40 px-4 py-1.5 font-mono text-xs text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
-          >
-            Hire me
-          </a>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <a
+              href="#contact"
+              className="rounded-full border border-primary/40 px-4 py-1.5 font-mono text-xs text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              Get in touch
+            </a>
+          </div>
         </div>
       </header>
+
 
       <main id="top" className="mx-auto max-w-5xl px-6">
         {/* Hero */}
